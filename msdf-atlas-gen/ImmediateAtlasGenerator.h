@@ -26,9 +26,9 @@ public:
     void rearrange(int width, int height, const Remap *remapping, int count);
     void resize(int width, int height);
     /// Sets attributes for the generator function
-    void setAttributes(const GeneratorAttributes &attributes);
+    void setAttributes(const GeneratorAttributes &attr);
     /// Sets the number of threads to be run by generate
-    void setThreadCount(int threadCount);
+    void setThreadCount(int numThreads);
     /// Allows access to the underlying AtlasStorage
     const AtlasStorage &atlasStorage() const;
     /// Returns the layout of the contained glyphs as a list of GlyphBoxes
